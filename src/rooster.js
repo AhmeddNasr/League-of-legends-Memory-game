@@ -28,16 +28,28 @@ function shuffle(array) {
 
 function GenerateRooster(props) {
     let rooster = [
-        <Card title="Evelynn" avatar={evelynnAvatar} key="evelynn-card"/>,
-        <Card title="Fat Evelynn" avatar={fatEvelynn} key="fatEvelynn-card"/>,
-        <Card title="KDA Evelynn" avatar={kdaEvelynn} key="kdaEvelynn-card"/>,
-        <Card title="T-Pose Evelynn" avatar={tposeEvelynn} key="tposeEvelynn-card"/>,
-        <Card title="Teacher Evelynn" avatar={teacherEvelynn} key="teacherEvelynn-card"/>,
-        <Card title="Masquarade Evelynn" avatar={masquaradeEvelynn} key="masquaradeEvelynn-card"/>,
-        <Card title="old Evelynn" avatar={oldEvelynn} key="oldEvelynn-card"/>,
-    ]
+        <Card title="Evelynn" avatar={evelynnAvatar} key="evelynn-card" />,
+        <Card title="Fat Evelynn" avatar={fatEvelynn} key="fatEvelynn-card" />,
+        <Card title="KDA Evelynn" avatar={kdaEvelynn} key="kdaEvelynn-card" />,
+        <Card
+            title="T-Pose Evelynn"
+            avatar={tposeEvelynn}
+            key="tposeEvelynn-card"
+        />,
+        <Card
+            title="Teacher Evelynn"
+            avatar={teacherEvelynn}
+            key="teacherEvelynn-card"
+        />,
+        <Card
+            title="Masquarade Evelynn"
+            avatar={masquaradeEvelynn}
+            key="masquaradeEvelynn-card"
+        />,
+        <Card title="old Evelynn" avatar={oldEvelynn} key="oldEvelynn-card" />,
+    ];
 
-    return shuffle(rooster);
+    return rooster;
 }
 
 export default GenerateRooster;

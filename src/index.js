@@ -40,7 +40,7 @@ const App = () => {
     }, []);
 
     useEffect(() => {
-        if (score === 7) {
+        if (score % 7 === 0 && score != 0) {
             let resetScore = () => {
                 cards.forEach(function (card) {
                     card.className = "card";
@@ -48,7 +48,7 @@ const App = () => {
                 if (score > highScore) {
                     setHighScore(score);
                 }
-                setScore((score = 0));
+                setScore((score += 1));
             };
             let cards = document.querySelectorAll(".card");
             cards.forEach(function (card) {
